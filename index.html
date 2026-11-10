@@ -43,7 +43,7 @@ p+p{margin-top:1em}
 section{padding:clamp(72px,10vw,130px) 0}
 
 /* header */
-.site-header{position:sticky;top:0;z-index:20;background:rgba(244,240,230,.92);backdrop-filter:blur(8px);border-bottom:1px solid rgba(62,70,46,.12)}
+.site-header{position:sticky;top:0;z-index:20;background:rgba(232,225,205,.94);backdrop-filter:blur(8px);border-bottom:1px solid rgba(62,70,46,.12)}
 .nav{display:flex;align-items:center;justify-content:space-between;height:76px}
 .nav-logo img{height:44px;width:auto}
 .nav-links{display:flex;align-items:center;gap:32px;list-style:none}
@@ -162,7 +162,9 @@ section{padding:clamp(72px,10vw,130px) 0}
 .footer-links{display:flex;gap:24px;list-style:none}
 .footer-links a{text-decoration:none}
 .footer-links a:hover{color:var(--blush)}
-.footer-note{padding-top:24px;max-width:70ch}
+.footer-note{padding-top:24px;font-size:.78rem;line-height:1.6;color:rgba(244,240,230,.6)}
+.footer-note p+p{margin-top:0}
+@media (min-width:901px){.footer-note{display:flex;justify-content:space-between;align-items:flex-start;gap:48px}.fn-left{white-space:nowrap}.fn-right{text-align:right;max-width:46ch}}
 
 :focus-visible{outline:3px solid var(--terracotta);outline-offset:3px}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
@@ -266,24 +268,24 @@ section{padding:clamp(72px,10vw,130px) 0}
       </div>
       <ul class="blend-grid">
         <li class="blend">
-          <figure><img src="blend-green-tea-lemongrass.jpg" alt="A box of Chathé Green Tea &amp; Lemongrass on a garden table with fresh lemongrass at sunrise." loading="lazy" style="object-position:50% 60%"></figure>
+          <figure><img src="blend-green-tea-lemongrass.jpg" alt="A box of Chathé Green Tea &amp; Lemongrass on a garden table with fresh lemongrass at sunrise." loading="lazy" style="object-position:50% 50%"></figure>
           <div class="band" style="background:var(--green-band)"></div>
-          <div class="txt"><h3>Green Tea &amp; Lemongrass</h3><span class="short">Fresh &amp; revitalising</span><p>For bright mornings and open windows.</p></div>
+          <div class="txt"><h3>Green Tea &amp;<br>Lemongrass</h3><span class="short">Fresh &amp; revitalising</span><p>For bright mornings and open windows.</p></div>
         </li>
         <li class="blend">
-          <figure><img src="blend-chamomile-honey.jpg" alt="A box of Chathé Chamomile &amp; Honey with a jar of honey and dried chamomile on a wooden table." loading="lazy" style="object-position:38% 50%"></figure>
+          <figure><img src="blend-chamomile-honey.jpg" alt="A box of Chathé Chamomile &amp; Honey with a jar of honey and a cup of tea on a windowsill at sunrise." loading="lazy" style="object-position:50% 50%"></figure>
           <div class="band" style="background:var(--yellow-band)"></div>
-          <div class="txt"><h3>Chamomile &amp; Honey</h3><span class="short">Soft &amp; calming</span><p>For the slow hour before the house wakes up.</p></div>
+          <div class="txt"><h3>Chamomile &amp;<br>Honey</h3><span class="short">Soft &amp; calming</span><p>For the slow hour before the house wakes up.</p></div>
         </li>
         <li class="blend">
-          <figure><img src="blend-ginger-turmeric.jpg" alt="A box of Chathé Ginger &amp; Turmeric with fresh ginger and turmeric roots." loading="lazy" style="object-position:50% 50%"></figure>
+          <figure><img src="blend-ginger-turmeric.jpg" alt="A box of Chathé Ginger &amp; Turmeric with fresh turmeric roots on a wooden board by a crackling fireplace." loading="lazy" style="object-position:50% 50%"></figure>
           <div class="band" style="background:var(--orange-band)"></div>
-          <div class="txt"><h3>Ginger &amp; Turmeric</h3><span class="short">Warming &amp; powerful</span><p>For rainy days and the fire's glow.</p></div>
+          <div class="txt"><h3>Ginger &amp;<br>Turmeric</h3><span class="short">Warming &amp; powerful</span><p>For rainy days and the fire's glow.</p></div>
         </li>
         <li class="blend">
           <figure><img src="blend-rooibos-forest-berries.jpg" alt="A box of Chathé Rooibos &amp; Forest Berries on a mossy tree stump with fresh berries." loading="lazy" style="object-position:50% 50%"></figure>
           <div class="band" style="background:var(--berry-band)"></div>
-          <div class="txt"><h3>Rooibos &amp; Forest Berries</h3><span class="short">Rich &amp; fruity</span><p>For frosty walks and long breakfasts.</p></div>
+          <div class="txt"><h3>Rooibos &amp;<br>Forest Berries</h3><span class="short">Rich &amp; fruity</span><p>For frosty walks and long breakfasts.</p></div>
         </li>
       </ul>
     </div>
@@ -404,7 +406,10 @@ section{padding:clamp(72px,10vw,130px) 0}
         <li><a href="#join">Contact</a></li>
       </ul>
     </div>
-    <p class="footer-note">© 2026 Chathé · Student project by Bente van der Lubbe, Artevelde University of Applied Sciences. No products are sold. Images and video generated with AI (Figma Weave, Adobe Firefly); page built with Claude.</p>
+    <div class="footer-note">
+      <p class="fn-left">© 2026 Chathé · Student project by Bente van der Lubbe, Artevelde University of Applied Sciences.</p>
+      <p class="fn-right">No products are sold. Images and video generated with AI (Figma Weave, Adobe Firefly); page built with Claude.</p>
+    </div>
   </div>
 </footer>
 
